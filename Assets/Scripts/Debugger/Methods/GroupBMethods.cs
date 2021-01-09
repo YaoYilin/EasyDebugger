@@ -12,7 +12,6 @@ public class GroupBMethods : IDebugger
         Debug.Log("GroupAMethods.Method1 is excuted.");
     }
 
-    //[GroupLayoutAttribute(LayoutGroupPriority.Group1, GroupTag.GroupB)]
     [DescribeAttribute("单一参数函数示例", "One Parameter Method")]
     [MethodNameAttribute("函数名称 2", "Method Name 2")]
     [MethodLayoutAttribute(LayoutMethodPriority.GroupB2)]
@@ -22,7 +21,6 @@ public class GroupBMethods : IDebugger
         Debug.Log($"GroupAMethods.Method2 is excuted. paramter value is {p}");
     }
 
-    //[GroupLayoutAttribute(LayoutGroupPriority.Group1, GroupTag.GroupB)]
     [DescribeAttribute("多参数函数示例", "Parameters Method")]
     [MethodNameAttribute("函数名称 3", "Method Name 3")]
     [MethodLayoutAttribute(LayoutMethodPriority.GroupB1)]
